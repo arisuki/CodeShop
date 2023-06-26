@@ -11,6 +11,7 @@ function handleLogOut(){
     return (
         <nav>
             <Link to="/">Store Front</Link>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
             <Link to="/orders">Order History</Link>
             &nbsp;&nbsp;|&nbsp;&nbsp;
             <Link to="/orders/new">New Order</Link>
