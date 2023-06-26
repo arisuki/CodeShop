@@ -8,7 +8,7 @@ import NavBar from "../../components/NavBar/NavBar"
 import {getUser} from "../../utilities/users-service"
 
 export default function App() {
-  const [user, setUser] = useState(getUser());
+  const [user, setUser] = useState("A"); //getUser()
   console.log("this is user in App", user)
 
   return (
