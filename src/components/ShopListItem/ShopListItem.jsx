@@ -1,16 +1,16 @@
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
+import "./ShopListItem.css"
 
-export default function ShopListItem({item}) {
+export default function ShopListItem({ item }) {
     return (
-        <>
-        {/* <Link to = {{pathname: {item.link.toString}} target = "_blank"} ></Link> */}
-        <a href="">
-        {/* <img src="{item.image}" alt="" /> */}
-        <div>{item.name}</div>
-        </a>
-        <div>${item.price}</div>
-        <div>{item.description}</div>
-       
-        </>
+        <div className="shop-list-item">
+            <a href={item.link}>
+                <img src={item.image} alt="" />
+                <div>{item.name}</div>
+            </a>
+            <div>${item.price}</div>
+            <div>{item.description}</div>
+
+        </div>
     );
 }

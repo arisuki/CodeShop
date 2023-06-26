@@ -1,0 +1,5 @@
+.logo {
+    --x: 50px;
+    height: var(--x);
+    width: var(--x);
+}
