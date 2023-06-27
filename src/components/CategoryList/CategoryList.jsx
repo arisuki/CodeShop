@@ -1,5 +1,18 @@
-export default function CategoryList() {
+
+export default function CategoryList({categories}) {
+
+const activeCategories = categories.map(category =>
+    <li
+    key = {category}
+    >
+        {category}
+    </li>
+    )
+
     return (
-        <div>we will mao through categories and list them, it will live below nav bar</div>
+        <div>
+            {activeCategories}
+
+        </div>
     )
 }
