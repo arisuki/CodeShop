@@ -32,7 +32,7 @@ const categoriesRef = useRef([])
                 )
 : (
     <div>
-        no items available
+        loading...
     </div>
     )
 
