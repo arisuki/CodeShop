@@ -1,10 +1,12 @@
 import ShopList from "../../components/ShopList/ShopList";
+import CategoryList from "../../components/CategoryList/CategoryList";
 import * as itemsAPI from "../../utilities/items-apis"
 import { useState, useEffect, useRef } from 'react';
 
 export default function Shop() {
 
 const [shopItems, setShopItems] = useState([])
+const categoriesRef = useRef([])
 
     useEffect(() =>{
         console.log("use effect will get items")
@@ -13,15 +15,17 @@ const [shopItems, setShopItems] = useState([])
     }, [])
         async function getItems() {
             const items = await itemsAPI.getAll();
-            console.log("items in shop.jsx", items)
-            // categoriesRef.current = [...new Set(items.map(item => item.category.name))];
+            categoriesRef.current = [...new Set(items.map(item => item.category.name))];
+            console.log("current categories", categoriesRef.current)
             setShopItems(items);
         }
 
 
     return (
         <>
-            <h1>Shop main page</h1>
+            <h3>
+                <CategoryList categories={categoriesRef.current}/>
+            </h3>
             <div>
             {shopItems.length ? (
                 <ShopList shopItems={shopItems}/>
