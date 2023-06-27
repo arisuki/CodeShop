@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom"
 import "./ShopListItem.css"
 
-export default function ShopListItem({ item }) {
+export default function ShopListItem({ shopItem }) {
     return (
         <div className="shop-list-item">
-            <a href={item.link}>
-                <img src={item.image} alt="" />
-                <div>{item.name}</div>
+            <a href={shopItem.link}>
+                <img src={shopItem.image} alt="" />
+                <div>{shopItem.name}</div>
             </a>
-            <div>${item.price}</div>
-            <div>{item.description}</div>
+            <div>${shopItem.price}</div>
+            <div>{shopItem.description}</div>
 
         </div>
     );

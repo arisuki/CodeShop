@@ -1,9 +1,10 @@
 import ShopListItem from "../ShopListItem/ShopListItem";
 
-export default function ShopList({ items }) {
-    const ShopListJsx = items.map((item, idx) =>
+export default function ShopList({ shopItems }) {
+    console.log("Shop items in shoplist", shopItems);
+    const ShopListJsx = shopItems.map((item, idx) =>
         <ShopListItem
-            item={item} key={idx} />
+            shopItem={item} key={idx} />
     )
     return (
         <>
