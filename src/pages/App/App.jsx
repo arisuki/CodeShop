@@ -6,7 +6,7 @@ import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import NavBar from "../../components/NavBar/NavBar"
 import Shop from "../Shop/Shop";
-import {getUser} from "../../utilities/users-service"
+import { getUser } from "../../utilities/users-service"
 
 export default function App() {
   const [user, setUser] = useState("A"); //getUser()
@@ -16,17 +16,17 @@ export default function App() {
     <main className="App">
       {
         user ?
-        <> 
-          <NavBar user = {user} setUser={setUser}/>
-        <Routes>
-          <Route path="/" element={<Shop/>}/>
-          <Route path = "/orders/new" element={<NewOrderPage/>}/>
-          <Route path = "/orders" element={<OrderHistoryPage/>}/>
-        </Routes>
-        </>
+          <>
+            <NavBar user={user} setUser={setUser} />
+            <Routes>
+              <Route path="/" element={<Shop />} />
+              <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
+              <Route path="/orders" element={<OrderHistoryPage />} />
+            </Routes>
+          </>
 
-        :
-        <AuthPage setUser={setUser}/>
+          :
+          <AuthPage setUser={setUser} />
       }
 
     </main>
