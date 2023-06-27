@@ -7,13 +7,12 @@ const Item = require('./models/item');
 (async function () {
     await Category.deleteMany({});
     const categories = await Category.create([
-        { name: 'Sandwiches', sortOrder: 10 },
-        { name: 'Seafood', sortOrder: 20 },
-        { name: 'Mexican', sortOrder: 30 },
-        { name: 'Italian', sortOrder: 40 },
-        { name: 'Sides', sortOrder: 50 },
-        { name: 'Desserts', sortOrder: 60 },
-        { name: 'Drinks', sortOrder: 70 },
+        { name: 'Clothing', sortOrder: 100 },
+        { name: 'Accessories', sortOrder: 200 },
+        { name: 'Office', sortOrder: 300 },
+        { name: 'Gadgets', sortOrder: 400 },
+        { name: 'Home', sortOrder: 500 },
+        { name: 'Food', sortOrder: 600 },
     ]);
 
     //we delete all items when re-seeding the database to avoid duplicates
