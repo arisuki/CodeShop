@@ -13,25 +13,22 @@ import ShopListItemShow from "../../components/ShopListItemShow/ShopListItemShow
 
 export default function App() {
   const [user, setUser] = useState("Alice"); //getUser()
-  console.log("this is user in App", user);
+  // console.log("this is user in App", user);
   const [shopItems, setShopItems] = useState([])
   const categoriesRef = useRef([])
-  const [cart, setCart] = useState(null);
+  const [cart, setCart] = useState([]);
 
-
+  useEffect(() =>{
     async function getItems() {
         const items = await itemsAPI.getAll();
         categoriesRef.current = [...new Set(items.map(item => item.category.name))];
         setShopItems(items);
-    }
-    async function getCart() {
+    }      getItems()
+
+    async function gettingCart() {
       const cart = await ordersAPI.getCart();
       setCart(cart);
-    }
-
-    useEffect(() =>{
-      getItems()
-      getCart()
+    }      gettingCart()
   }, [])
 
   return (
@@ -47,13 +44,9 @@ export default function App() {
             />
             {/* <Route path = "/orders" element={<ShopListItemShow shopItems={shopItems} />}/> */}
             <Route 
-            path = "/orders/new" 
-            element={<Shop shopItems={shopItems} categories={categoriesRef.current} cart={cart} setCart={setCart} />}
+            path = "/shop" 
+            element={<Shop shopItems={shopItems} categories={categoriesRef.current} cart={cart} setCart={setCart} />}/>
 
-            />
-
-            {/* <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} /> */}
-            {/* <Route path="/orders" element={<OrderHistoryPage />} /> */}
           </Routes>
         </>
       ) : (

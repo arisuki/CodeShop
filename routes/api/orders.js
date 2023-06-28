@@ -7,3 +7,5 @@ router.get('/cart', ordersCtrl.cart);
 
 // POST /api/orders/cart/items/:id
 router.post('/cart/items/:id', ordersCtrl.addToCart);
+
+module.exports = router;

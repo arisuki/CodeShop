@@ -2,14 +2,15 @@ import ShopList from "../../components/ShopList/ShopList";
 import CategoryList from "../../components/CategoryList/CategoryList";
 import { useState, useEffect } from "react";
 import * as ordersAPI from "../../utilities/orders-api";
-import OrderDetail from "../../components/OrderDetail/OrderDetail";
+import CartDetail from "../../components/CartDetail/CartDetail";
 
 export default function Shop({ shopItems, categories, cart, setCart}) {
+    
     async function handleAddToOrder(itemId) {
-        // 1. Call the addItemToCart function in ordersAPI, passing to it the itemId, and assign the resolved promise to a variable named cart.
         const updatedCart = await ordersAPI.addItemToCart(itemId);
-        // 2. Update the cart state with the updated cart received from the server
+        console.log("added item to cart", itemId);
         setCart(updatedCart);
+        console.log("updated cart", updatedCart);
       }
 
   return (
@@ -19,15 +20,26 @@ export default function Shop({ shopItems, categories, cart, setCart}) {
       </h3>
       <div>
         {shopItems.length ? (
-          <ShopList shopItems={shopItems} handleAddToOrder={handleAddToOrder} />
+          <ShopList shopItems={shopItems} 
+          handleAddToOrder={handleAddToOrder} 
+          cart = {cart}
+          setCart={setCart}
+        
+          />
         ) : (
           <div>loading...</div>
         )}
       </div>
       <div className="item-list"></div>
-      <OrderDetail
-        order={cart}
-      />
+      {cart.length ? (
+        <CartDetail
+        order={cart}      />
+      ) : (
+        <div>Add items to cart</div>
+      )}
+        
+      
+
     </>
   );
 }
