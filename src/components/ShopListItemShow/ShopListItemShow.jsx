@@ -10,6 +10,7 @@ console.log("item const", item);
 return(
     <div>
         Item details page:
+        ROUTE WAS HIT
         
     </div>
 )
