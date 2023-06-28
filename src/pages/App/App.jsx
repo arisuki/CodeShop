@@ -11,7 +11,6 @@ import ShopListItemShow from "../../components/ShopList/ShopList";
 // import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 
 
-
 export default function App() {
   const [user, setUser] = useState("Alice"); //getUser()
   console.log("this is user in App", user);
