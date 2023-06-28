@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import "./ShopListItem.css"
 
-export default function ShopListItem({ shopItem }) {
+export default function ShopListItem({ shopItem, handleAddToOrder}) {
     return (
         <div className="shop-list-item">
       
@@ -10,7 +10,7 @@ export default function ShopListItem({ shopItem }) {
                 <div>{shopItem.name}</div>
                 </Link>
             <div>${shopItem.price}</div>
-            <div>{shopItem.description}</div>
+            <button onClick={()=> handleAddToOrder(shopItem._id)}>add to cart</button>
 
         </div>
     );
