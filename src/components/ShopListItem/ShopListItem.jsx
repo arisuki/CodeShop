@@ -5,7 +5,7 @@ import "./ShopListItem.css"
 export default function ShopListItem({ shopItem }) {
     return (
         <div className="shop-list-item">
-            {/* <Link to{`/items/${shopItem._id}`} >    </Link> */}
+            <Link to={`/items/${shopItem._id}`} shopItemName={shopItem}>  </Link>
                 <img src={shopItem.image} alt="" />
                 <div>{shopItem.name}</div>
            

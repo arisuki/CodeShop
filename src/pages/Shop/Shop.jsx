@@ -1,6 +1,6 @@
 import ShopList from "../../components/ShopList/ShopList";
 import CategoryList from "../../components/CategoryList/CategoryList";
-import * as itemsAPI from "../../utilities/items-apis"
+import * as itemsAPI from "../../utilities/items-api"
 import { useState, useEffect, useRef } from 'react';
 
 export default function Shop() {
