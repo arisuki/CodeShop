@@ -12,12 +12,14 @@ export default function OrderHistoryPage({ user }) {
         }
         getOrders();
     }, []);
+    const paidOrders = orders.map((order) =>
+    
+    <CartDetail order={order}/> ) 
 
-console.log(orders, 'orders')
     return (
         <>
         <h1>Order List Component that lists all previous items</h1>
-         {/* <CartDetail /> */}
+         {paidOrders}
         {/* // orders={orders} */}
         </>
     );

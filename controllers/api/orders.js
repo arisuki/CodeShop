@@ -4,7 +4,8 @@ module.exports = {
   cart,
   addToCart,
   setItemQtyInCart,
-  checkout
+  checkout,
+  getAllOrders
 };
 
 
@@ -31,4 +32,9 @@ async function checkout(req, res) {
   cart.isPaid = true;
   await cart.save();
   res.json(cart);
+}
+
+async function getAllOrders(req, res) {
+  const orders = await Order.find({user: req.user._id, isPaid: true})
+  res.json(orders);
 }
