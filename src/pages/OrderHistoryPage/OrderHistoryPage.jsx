@@ -1,14 +1,24 @@
-import {checkToken} from "../../utilities/users-service"
-export default function OrderHistory() {
+import CartDetail from "../../components/CartDetail/CartDetail";
+import { useState, useEffect } from 'react';
+import * as ordersAPI from '../../utilities/orders-api';
 
-async function handleCheckToken(){
-const expDate= await checkToken()
-console.log(expDate)
-}
+export default function OrderHistoryPage({ user }) {
+    const [orders, setOrders] = useState([]);
+    
+    useEffect(function() {
+        async function getOrders() {
+            const orders = await ordersAPI.getAllForUser();
+            setOrders(orders);
+        }
+        getOrders();
+    }, []);
+
+console.log(orders, 'orders')
     return (
-       <> 
-    <h1>Order History Page</h1>
-    <button onClick={handleCheckToken}>Check when my login expires</button>
-    </>
-    )
+        <>
+        <h1>Order List Component that lists all previous items</h1>
+         {/* <CartDetail /> */}
+        {/* // orders={orders} */}
+        </>
+    );
 }
