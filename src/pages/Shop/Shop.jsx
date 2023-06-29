@@ -5,16 +5,19 @@ import * as ordersAPI from "../../utilities/orders-api";
 import CartDetail from "../../components/CartDetail/CartDetail";
 import { useNavigate } from 'react-router-dom';
 
-export default function Shop({ shopItems, categories}) {
+export default function Shop({ shopItems, categories, activeCategory, setActiveCategory}) {
     const [cart, setCart] = useState(null);
+    // const [activeCategory, setActiveCategory] = useState('');
     const navigate = useNavigate();
     
     useEffect(() =>{
     async function gettingCart() {
         const cart = await ordersAPI.getCart();
         setCart(cart);
+
       }      gettingCart()
     }, [])
+
 
     async function handleAddToOrder(itemId) {
         const updatedCart = await ordersAPI.addItemToCart(itemId);
@@ -36,16 +39,24 @@ export default function Shop({ shopItems, categories}) {
   return (
     <>
       <h3>
-        <CategoryList categories={categories} />
+        <CategoryList categories={categories}
+        activeCategory={activeCategory}
+        setActiveCategory={setActiveCategory} />
       </h3>
       <div>
         {shopItems.length ? (
-          <ShopList shopItems={shopItems} 
+          activeCategory ? 
+          (<ShopList shopItems={shopItems.filter(item => item.category.name === activeCategory)} 
           handleAddToOrder={handleAddToOrder} 
           cart = {cart}
-          setCart={setCart}
-        
-          />
+          setCart={setCart}/>)
+          : 
+          (
+            <ShopList shopItems={shopItems} 
+            handleAddToOrder={handleAddToOrder} 
+            cart = {cart}
+            setCart={setCart}/>
+          )
         ) : (
           <div>loading...</div>
         )}
