@@ -4,8 +4,16 @@ import { useState, useEffect } from "react";
 import * as ordersAPI from "../../utilities/orders-api";
 import CartDetail from "../../components/CartDetail/CartDetail";
 
-export default function Shop({ shopItems, categories, cart, setCart}) {
+export default function Shop({ shopItems, categories}) {
+    const [cart, setCart] = useState(null);
     
+    useEffect(() =>{
+    async function gettingCart() {
+        const cart = await ordersAPI.getCart();
+        setCart(cart);
+      }      gettingCart()
+    }, [])
+
     async function handleAddToOrder(itemId) {
         const updatedCart = await ordersAPI.addItemToCart(itemId);
         console.log("added item to cart", itemId);
@@ -31,7 +39,7 @@ export default function Shop({ shopItems, categories, cart, setCart}) {
         )}
       </div>
       <div className="item-list"></div>
-      {cart.length ? (
+      {cart ? (
         <CartDetail
         order={cart}      />
       ) : (

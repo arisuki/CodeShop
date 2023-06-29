@@ -10,7 +10,7 @@ const cartItemSchema = new Schema({
     toJSON: { virtuals: true }
 });
 
-cartItemSchema.virtual('liPrice').get(function () {
+cartItemSchema.virtual('totalPrice').get(function () {
     // 'this' keyword is bound to the cartItem document
     return this.qty * this.item.price;
 });

@@ -16,7 +16,6 @@ export default function App() {
   // console.log("this is user in App", user);
   const [shopItems, setShopItems] = useState([])
   const categoriesRef = useRef([])
-  const [cart, setCart] = useState([]);
 
   useEffect(() =>{
     async function getItems() {
@@ -25,10 +24,7 @@ export default function App() {
         setShopItems(items);
     }      getItems()
 
-    async function gettingCart() {
-      const cart = await ordersAPI.getCart();
-      setCart(cart);
-    }      gettingCart()
+
   }, [])
 
   return (
@@ -37,7 +33,7 @@ export default function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route exact path="/" element={<Shop shopItems={shopItems} categories={categoriesRef.current} cart={cart} setCart={setCart}/>} />
+            <Route exact path="/" element={<Shop shopItems={shopItems} categories={categoriesRef.current} />} />
             <Route
               path="/shop/items/:id"
               element={<ShopListItemShow shopItems={shopItems} />}
@@ -45,7 +41,7 @@ export default function App() {
             {/* <Route path = "/orders" element={<ShopListItemShow shopItems={shopItems} />}/> */}
             <Route 
             path = "/shop" 
-            element={<Shop shopItems={shopItems} categories={categoriesRef.current} cart={cart} setCart={setCart} />}/>
+            element={<Shop shopItems={shopItems} categories={categoriesRef.current}  />}/>
 
           </Routes>
         </>

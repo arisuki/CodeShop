@@ -9,8 +9,8 @@ export default function ShopList({ shopItems, handleAddToOrder }) {
 
 
     return (
-        <>
+        <div className="shop-list">
                       {ShopListJsx}
-        </>
+        </div>
     )
 }

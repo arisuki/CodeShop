@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Ysabeau+Infant:wght@300&display=swap');
+
 .App {
   text-align: center;
 }
@@ -26,13 +28,13 @@
 
 .App-link {
   color: #61dafb;
+  font-family: 'Ysabeau Infant', sans-serif;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
@@ -41,9 +43,73 @@
 body {
   background: var(--black);
   color: var(--white);
+  
+}
+
+.logo {
+  --x: 50px;
+  height: var(--x);
+  width: var(--x);
+  filter: invert(100%) sepia(27%) saturate(5371%) hue-rotate(180deg) brightness(107%) contrast(116%);
+}
+
+.nav-bar{
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 :root {
   --black: rgb(29, 29, 29);
   --white: rgb(241, 241, 241);
+}
+
+.cart-detail{
+  width: 30%;
+  border: purple 10px solid;
+}
+.cart-img{
+  max-width: 60%;
+  max-height: auto;
+  overflow: clip;
+  border: yellow 10px solid;
+}
+
+.shop-list{
+  width: 90%;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  border: red 4px solid;
+  flex-wrap: wrap;
+}
+
+.shop-list-item {
+  
+  height: 25%;
+  width: 25%;
+  margin: auto;
+  border: blue 10px solid;
+}
+
+.shop-list-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: green 10px solid;
+
+}
+
+.shop-list-item-show>img{
+  width: 40%;
+  height: auto;
+}
+
+.categories{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-evenly;
+  color: rgb(255, 255, 255);
+  margin: auto; 
+  padding: 5px;
 }
