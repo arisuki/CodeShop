@@ -1,4 +1,4 @@
-export default function CartItem({ cartItem, isPaid }) {
+export default function CartItem({ cartItem, isPaid, handleChangeQty }) {
 
     return (
         <div className="cart-items">
@@ -9,12 +9,13 @@ export default function CartItem({ cartItem, isPaid }) {
             <div>{cartItem.totalPrice.toFixed(2)}</div>
             <div>
                 {!isPaid &&
-                    <button onClick=""></button>
+                    <button onClick={() => handleChangeQty(cartItem.item._id, cartItem.qty -1)}>-</button>
                 }
             </div>
+            <span>{cartItem.qty}</span>
             <div>
                 {!isPaid &&
-                    <button onClick=""></button>
+                    <button onClick={() => handleChangeQty(cartItem.item._id, cartItem.qty +1)}>+</button>
                 }
             </div>
         </div>
