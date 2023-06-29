@@ -17,14 +17,15 @@ console.log({order})
 
     return (
         <div className="cart-detail">
-        <p >
-            <h3>ITEMS IN CURRENT ORDER </h3>
-
-        </p>
-           
+            {order.isPaid ? <span>Order #: {order.orderId}</span>  
+            : <span><h3>ITEMS IN CURRENT ORDER </h3></span>
+            }
+                  
             <span>{cartItems}</span> 
-            <button onclick={handleCheckout}
-                    >Check out</button> 
+            {order.isPaid ? null :
+            <button onClick={handleCheckout}
+                    >Check out</button> } 
+                   <span>Total</span> {order.orderTotal.toFixed(2)}
         </div>
     )
 }

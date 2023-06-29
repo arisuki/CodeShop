@@ -7,12 +7,12 @@ import AuthPage from "../AuthPage/AuthPage";
 import NavBar from "../../components/NavBar/NavBar";
 import Shop from "../Shop/Shop";
 import ShopListItemShow from "../../components/ShopListItemShow/ShopListItemShow";
-// import { getUser } from "../../utilities/users-service"
+import { getUser } from "../../utilities/users-service"
 // import NewOrderPage from '../NewOrderPage/NewOrderPage';
-// import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 
 export default function App() {
-  const [user, setUser] = useState("Alice"); //getUser()
+  const [user, setUser] = useState(getUser());
   // console.log("this is user in App", user);
   const [shopItems, setShopItems] = useState([])
   const categoriesRef = useRef([])
@@ -38,7 +38,7 @@ export default function App() {
               path="/shop/items/:id"
               element={<ShopListItemShow shopItems={shopItems} />}
             />
-            {/* <Route path = "/orders" element={<ShopListItemShow shopItems={shopItems} />}/> */}
+            <Route path = "/orders" element={<OrderHistoryPage />}/> 
             <Route 
             path = "/shop" 
             element={<Shop shopItems={shopItems} categories={categoriesRef.current}  />}/>
