@@ -1,10 +1,12 @@
 export default function CartItem({ cartItem, isPaid }) {
-    return (
-        <div>
-            <div>{cartItem.item}</div>
 
+    return (
+        <div className="cart-items">
+
+            <img className="cart-img" src={cartItem.item.image} alt="" />
             <div>{cartItem.item.name}</div>
-            <span>{cartItem.item.price.toFixed(2)}</span>
+            <div>{cartItem.item.price.toFixed(2)}</div>
+            <div>{cartItem.totalPrice.toFixed(2)}</div>
             <div>
                 {!isPaid &&
                     <button onClick=""></button>
@@ -15,7 +17,6 @@ export default function CartItem({ cartItem, isPaid }) {
                     <button onClick=""></button>
                 }
             </div>
-            <div>${cartItem.extPrice.toFixed(2)}</div>
         </div>
     );
 }

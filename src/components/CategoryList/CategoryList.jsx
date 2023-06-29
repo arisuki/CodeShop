@@ -1,16 +1,15 @@
-
 export default function CategoryList({categories}) {
 
 const activeCategories = categories.map(category =>
-    <li
+    <div 
     key = {category}
     >
-        {category}
-    </li>
+        {category.toUpperCase()}
+    </div>
     )
 
     return (
-        <div>
+        <div className="categories">
             {activeCategories}
 
         </div>
