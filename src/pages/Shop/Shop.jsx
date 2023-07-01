@@ -70,9 +70,20 @@ export default function Shop({ shopItems, categories, activeCategory, setActiveC
       ) : (
         <div>Add items to cart</div>
       )}
-        
-      
 
+      <h4>Sign up for our newsletter to receive 15% off on your first purchase</h4>
+      <div>
+        <form autoComplete="off">
+            <label>Email</label>
+            <input
+              type="email"
+              name="email"
+            />
+            <button type="submit">
+              SIGN UP
+            </button>
+          </form>
+      </div>
     </>
   );
 }
