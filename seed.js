@@ -37,7 +37,7 @@ const Item = require('./models/item');
         },
         {
             name: "Shark Hoodie",
-            image: "https://ae01.alicdn.com/kf/S8e44ed944f354fe2b053f07099ae6b30V/1Pairs-Couple-Five-Fingered-Sock-Cartoon-Lovely-Cotton-Breathable-Comfortable-5-Toe-splitting-Socks-For-Women.jpg_Q90.jpg_.webp",
+            image: "https://ae01.alicdn.com/kf/S2a0dbda4124e45a58d2dd998a37a6561H/Funny-Shark-Patchwork-Hoodies-Man-Autumn-Kawaii-Sweatshirt-2021-Casual-Long-Sleeve-Pullover-School-Couple-Clothes.jpg_220x220.jpg_.webp",
             description: "Funny Shark Patchwork Hoodies Man Autumn Kawaii Sweatshirt 2023 Casual Long Sleeve Pullover School Couple Clothes New",
             link: "https://www.aliexpress.us/item/3256805538383367.html?spm=a2g0o.productlist.main.27.69532f45m4kuIa&algo_pvid=600394fa-53d5-4cec-9040-3135b434f6a7&algo_exp_id=600394fa-53d5-4cec-9040-3135b434f6a7-13&pdp_npi=3%40dis%21USD%213.72%211.82%21%21%21%21%21%402102196716877887861227126d077d%2112000034155594085%21sea%21US%210&curPageLogUid=u1gbXd2cloKo",
             category: categories[0],
@@ -114,6 +114,150 @@ const Item = require('./models/item');
             link: "https://www.aliexpress.us/item/3256805420822774.html?spm=a2g0o.productlist.main.21.269b5dc7XtZE6E&algo_pvid=16d081f4-1d44-45d3-b594-7f92564a9e61&algo_exp_id=16d081f4-1d44-45d3-b594-7f92564a9e61-10&pdp_npi=3%40dis%21USD%21222.61%21189.22%21%21%21%21%21%40212248ba16877882107106270d0756%2112000033729658639%21sea%21US%210&curPageLogUid=UNFweellis6W",
             category: categories[2],
             price: 189
+        },
+        {
+            name: "Senior Developer Skills StackOverflow",
+            image: "https://ae01.alicdn.com/kf/S7f9abcf05a7c4dae93c8c19932766730o/Senior-Developer-Skills-Stackoverflow-CTRL-C-V-T-Shirt-Programmer-Personality-Frontend-Backend-Geek-Coder-Cotton.jpg_220x220.jpg_.webp",
+            description: "Senior Developer Skills Stackoverflow CTRL C+V T-Shirt Programmer Personality Frontend Backend Geek Coder Cotton Quality Clothes",
+            link: "https://www.aliexpress.com/item/1005004714192060.html?spm=a2g0o.productlist.main.37.41bfd6e72dp5A6&algo_pvid=b106364c-7871-4898-a1d7-7024d35be072&algo_exp_id=b106364c-7871-4898-a1d7-7024d35be072-18&pdp_npi=3%40dis%21CAD%218.62%215.52%21%21%21%21%21%4021021a7216877965485572592d0744%2112000030204469188%21sea%21CA%21721336510&curPageLogUid=oX8KVGq2pLNg",
+            category: categories[0],
+            price: 9
+        },
+        {
+            name: "Chat GPT T Shirt",
+            image: "https://ae01.alicdn.com/kf/S1cf6c28ba2734506bd31bd08712c6ee6g/Men-Clothing-ChatGPT-More-Chat-GPT-Developer-Programmer-Coder-Artwork-Gift-Tee-Unisex-Tops-Think-Less.jpg_220x220.jpg_.webp",
+            description: "Men Clothing ChatGPT More Chat GPT Developer Programmer Coder Artwork Gift Tee Unisex Tops Think Less Women Graphic T Shirts",
+            link: "https://www.aliexpress.com/item/1005005390055110.html?spm=a2g0o.productlist.main.1.41bfd6e72dp5A6&algo_pvid=b106364c-7871-4898-a1d7-7024d35be072&algo_exp_id=b106364c-7871-4898-a1d7-7024d35be072-0&pdp_npi=3%40dis%21CAD%2115.86%216.34%21%21%21%21%21%4021021a7216877965485572592d0744%2112000032857526166%21sea%21CA%21721336510&curPageLogUid=BndFk1kiN0CJ",
+            category: categories[0],
+            price: 5
+        },
+        {
+            name: "Coding T shirt",
+            image: "https://ae01.alicdn.com/kf/Sd7e87b08229a46cfbc0cd642eb80f64bP/Programmer-Programming-Coding-Coder-Men-Tshirts-Linux-Root-Sudo-Fun-Tee-Shirt-Streetwear-Men-T-Shirt.jpg_220x220.jpg_.webp",
+            description: "Programmer Programming Coding Coder Men Tshirts Linux Root Sudo Fun Tee Shirt Streetwear Men T Shirt Cotton Tee Clothes",
+            link: "https://www.aliexpress.com/item/1005003786149788.html?spm=a2g0o.productlist.main.5.3169d6e7Essq0I&algo_pvid=257fb502-fdd9-4482-92ff-449dbbea26e3&algo_exp_id=257fb502-fdd9-4482-92ff-449dbbea26e3-2&pdp_npi=3%40dis%21CAD%2146.03%2117.03%21%21%21%21%21%40211bf31716878423335333133d07e4%2112000027163094459%21sea%21CA%21721336510&curPageLogUid=lRiox9hnSwfW",
+            category: categories[0],
+            price: 9
+        },
+        {
+            name: "Cat Key Cap",
+            image: "https://ae01.alicdn.com/kf/He943ce028ad544b8a30dc8eacb1e864fx/1Pcs-Animal-Cartoon-Key-Cover-Cap-Silicone-Key-Accessories-PVC-Soft-Dog-Cat-Key-Holder-Key.jpg_220x220.jpg_.webp",
+            description: "Animal Cartoon Key Cover Cap Silicone Key Accessories PVC Soft Cat Key Holder Key Chain For Girl Women Trinket Gift",
+            link: "https://www.aliexpress.us/item/2255800383913868.html?spm=a2g0o.productlist.main.61.7f6b275ehmaw54&algo_pvid=15c3bdc3-70c4-403d-8c3b-84597feeb083&algo_exp_id=15c3bdc3-70c4-403d-8c3b-84597feeb083-30&pdp_npi=3%40dis%21USD%210.78%210.7%21%21%21%21%21%40211be10916881656326396192d07e2%2110000003071830129%21sea%21US%210&curPageLogUid=TQQU8j8Pr65J",
+            category: categories[4],
+            price: 2
+        },
+        {
+            name: "Hair clip",
+            image: "https://ae01.alicdn.com/kf/S63fd75f52ed246b0ae51beb44dac68e6C/New-Letter-B-Hair-Claws-Girls-Elegant-Shark-Clip-High-Ponytail-Hair-Grab-Clip-Headwear-Women.jpg_220x220.jpg_.webp",
+            description: "New Letter B Hair Claws Girls Elegant Shark Clip High Ponytail Hair Grab Clip Headwear Women Fashion Barrettes Hair Accessories",
+            link: "https://www.aliexpress.us/item/3256805315347868.html?spm=a2g0o.productlist.main.59.7f6b275ehmaw54&algo_pvid=15c3bdc3-70c4-403d-8c3b-84597feeb083&aem_p4p_detail=202306301553528306386135462800005589400&algo_exp_id=15c3bdc3-70c4-403d-8c3b-84597feeb083-29&pdp_npi=3%40dis%21USD%216.13%210.99%21%21%21%21%21%40211be10916881656326396192d07e2%2112000033330626150%21sea%21US%210&curPageLogUid=63rux21QpbPc&search_p4p_id=202306301553528306386135462800005589400_6",
+            category: categories[1],
+            price: 2
+        },
+        {
+            name: "Knitted beanie",
+            image: "https://ae01.alicdn.com/kf/He943ce028ad544b8a30dc8eacb1e864fx/1Pcs-Animal-Cartoon-Key-Cover-Cap-Silicone-Key-Accessories-PVC-Soft-Dog-Cat-Key-Holder-Key.jpg_220x220.jpg_.webp",
+            description: "Stretchy Plain Knitted Hat Women Beanies Solid Skull Cap Winter Keep Warm Dark Green Grey Blue Black",
+            link: "https://www.aliexpress.us/item/2255800085432663.html?spm=a2g0o.productlist.main.17.7c774a4aIyUNq2&algo_pvid=45e804f5-7649-4c1b-9b69-18702839707e&algo_exp_id=45e804f5-7649-4c1b-9b69-18702839707e-8&pdp_npi=3%40dis%21USD%214.63%210.99%21%21%21%21%21%40211bea0816881658794685311d07b9%2110000001106165525%21sea%21US%210&curPageLogUid=KYAg4b5ML8jc",
+            category: categories[1],
+            price: 2
+        },
+        {
+            name: "New Knitted beanie",
+            image: "https://ae01.alicdn.com/kf/H2ffa8307c2c04c36afeaa7cf399f46b2y/New-Women-Men-Knitted-Beanie-Hat-Cap-Autumn-Winter-Male-Lady-Casual-Embroidered-Boy-Girl-Cap.jpg_220x220.jpg_.webp",
+            description: "New Women Men Knitted Beanie Hat Cap Autumn Winter Male Lady Casual Embroidered Boy Girl Cap Hat For Women Men",
+            link: "https://www.aliexpress.us/item/3256803201622115.html?spm=a2g0o.productlist.main.77.7c774a4aIyUNq2&algo_pvid=caf91b94-2cbb-48a9-92a5-9611f5c7d412&algo_exp_id=caf91b94-2cbb-48a9-92a5-9611f5c7d412-38&pdp_npi=3%40dis%21USD%216.96%213.48%21%21%21%21%21%402102186a16881659067617104d077f%2112000025547820365%21sea%21US%210&curPageLogUid=NpfHSmTfIIMK",
+            category: categories[1],
+            price: 4
+        },
+        {
+            name: "Wooden table lamp",
+            image: "https://ae01.alicdn.com/kf/Sd9202210c02b44208a26a9a661bd799bK/Creative-Table-Lamp-Wooden-Robot-Shape-LED-Nordic-Art-Desk-Lights-Eye-Protection-Reading-Bedroom-Desktop.jpg_220x220.jpg_.webp",
+            description: "Creative Table Lamp Wooden Robot Shape LED Nordic Art Desk Lights/ Eye Protection Reading&Bedroom Desktop Night Light Home Decor",
+            link: "https://www.aliexpress.us/item/3256805303345898.html?spm=a2g0o.productlist.main.39.1c5e4897IOKILD&algo_pvid=94195707-1816-4738-b0f7-186aacacc373&aem_p4p_detail=202306301511488760455493162780005517941&algo_exp_id=94195707-1816-4738-b0f7-186aacacc373-19&pdp_npi=3%40dis%21USD%2163.6%2131.16%21%21%21%21%21%40210213c816881631084095782d076c%2112000033285384918%21sea%21US%210&curPageLogUid=Ucje4aoO6A8Y&search_p4p_id=202306301511488760455493162780005517941_4",
+            category: categories[4],
+            price: 32
+        },
+        {
+            name: "Kitty cat keyboard and mouse",
+            image: "https://ae01.alicdn.com/kf/Sb673b5517b29414391b17fad50f9bdafc/MOFII-Kawaii-Cat-2-4G-Wireless-Keyboard-and-Mouse-Set-Cute-Lipstick-Punk-Keyboards-and-Mice.jpg_220x220.jpg_.webp",
+            description: "Cat 2.4G Wireless Keyboard and Mouse Set Cute Lipstick Punk Keyboards and Mice Combos for Laptop PC Home Office",
+            link: "https://www.aliexpress.us/item/3256805567991997.html?spm=a2g0o.productlist.main.31.1c5e4897IOKILD&algo_pvid=94195707-1816-4738-b0f7-186aacacc373&algo_exp_id=94195707-1816-4738-b0f7-186aacacc373-15&pdp_npi=3%40dis%21USD%2128.58%2128.58%21%21%21%21%21%40210213c816881631084095782d076c%2112000034232659704%21sea%21US%210&curPageLogUid=4fAyGZsW2NDO",
+            category: categories[3],
+            price: 29
+        },
+        {
+            name: "Multifunctional Desk Organizer/Flower pot",
+            image: "https://ae01.alicdn.com/kf/S9207d0d5a9644b06bb208de4c7d3fcc7D/Multifunctional-Desk-Organizer-Home-Office-Desk-Organizer-Room-Organizer-Office-Desk-Anime-Storage-Box-Garden-Flower.jpg_220x220.jpg_.webp",
+            description: "Multifunctional Desk Organizer Home Office Desk Organizer Room Organizer Office Desk Anime Storage Box Garden Flower Pot",
+            link: "https://www.aliexpress.us/item/3256801501420256.html?spm=a2g0o.productlist.main.13.1c5e4897IOKILD&algo_pvid=50b52e4b-e8fc-44c0-b2b2-a4c3976b0d1c&algo_exp_id=50b52e4b-e8fc-44c0-b2b2-a4c3976b0d1c-6&pdp_npi=3%40dis%21USD%2121.04%2113.68%21%21%21%21%21%40212278bd16881643861844485d07cd%2112000027278266921%21sea%21US%210&curPageLogUid=cHE4uUSQ00J3",
+            category: categories[4],
+            price: 14
+        },
+        {
+            name: "Candy Color Wireless Keyboard Mouse Set",
+            image: "https://ae01.alicdn.com/kf/S716f2121f0904c4585ef2fc9e684adc6t/Candy-Color-Wireless-Keyboard-Mouse-Set-Round-Keycap-2-4G-Keyboard-Home-Office-PC-Tablet-Laptop.jpg_220x220.jpg_.webp",
+            description: "Candy Color Wireless Keyboard Mouse Set Round Keycap 2.4G Keyboard Home Office PC Tablet Laptop 84-key Keyboards Mouse Set",
+            link: "https://www.aliexpress.us/item/3256804030220867.html?spm=a2g0o.productlist.main.75.1c5e4897IOKILD&algo_pvid=806e99eb-2fcb-415b-8d96-78519149f584&algo_exp_id=806e99eb-2fcb-415b-8d96-78519149f584-37&pdp_npi=3%40dis%21USD%2141.99%2127.29%21%21%21%21%21%4021021a7216881644746391311d0744%2112000028410840037%21sea%21US%210&curPageLogUid=D4eUobp582Ke",
+            category: categories[3],
+            price: 28
+        },
+        {
+            name: "IPad mini cat cover",
+            image: "https://ae01.alicdn.com/kf/Se1e7b00c640c498da409dbe528f8fce5S/For-iPad-Mini-4-5-7-9-6-8-3-Inches-Air-3-4-5-Cute.jpg_220x220.jpg_.webp",
+            description: "For iPad Mini 4 5 7.9 6 8.3 Inches Air 3 4 5 Cute Bear Case For iPad 2019 9.7 2020 2021 10.2 2022 10.9 Pro 11 12.9 Inches Cover",
+            link: "https://www.aliexpress.us/item/3256804371866568.html?spm=a2g0o.detail.0.0.2d26vRItvRItkZ&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40050.281175.0&scm_id=1007.40050.281175.0&scm-url=1007.40050.281175.0&pvid=7d1b99b6-08d8-4580-9bfa-c2cb07ae8f50&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40050.281175.0,pvid:7d1b99b6-08d8-4580-9bfa-c2cb07ae8f50,tpp_buckets:668%232846%238115%232000&pdp_npi=3%40dis%21USD%2113.56%215.17%21%21%21%21%21%40210324e516881645112038359ed212%2112000033799225454%21rec%21US%21",
+            category: categories[3],
+            price: 6
+        },
+        {
+            name: "Sit Stand Desk Standing Desk ",
+            image: "https://ae01.alicdn.com/kf/Se72a20526bbb4f45a061320d99ebd425b/Sit-Stand-Desk-Standing-Desk-Standing-Work-Station-Desk-Organizer-Desk-for-Home-Office-Laptop-Stand.jpg_220x220.jpg_.webp",
+            description: "Sit Stand Desk Standing Desk Standing Work Station Desk Organizer Desk for Home Office Laptop Stand GABRIEL",
+            link: "https://www.aliexpress.us/item/3256805566466004.html?spm=a2g0o.productlist.main.17.1c5e4897IOKILD&algo_pvid=94195707-1816-4738-b0f7-186aacacc373&algo_exp_id=94195707-1816-4738-b0f7-186aacacc373-8&pdp_npi=3%40dis%21USD%21164.15%2183.72%21%21%21%21%21%40210213c816881631084095782d076c%2112000034228709103%21sea%21US%210&curPageLogUid=leYwoG5YmbX1",
+            category: categories[2],
+            price: 84
+        },
+        {
+            name: "Simple Home Office Desktop Computer Desk",
+            image: "https://ae01.alicdn.com/kf/S0e50dcb5f6ad450cb6c215307ecdf929L/Simple-Home-Office-Desktop-Computer-Desk-study-desk-white-desk-laptop-table-desk-table.jpg_220x220.jpg_.webp",
+            description: "Simple Home Office Desktop Computer Desk study desk white desk laptop table desk table",
+            link: "https://www.aliexpress.us/item/3256805568689848.html?spm=a2g0o.productlist.main.75.1c5e4897IOKILD&algo_pvid=94195707-1816-4738-b0f7-186aacacc373&algo_exp_id=94195707-1816-4738-b0f7-186aacacc373-37&pdp_npi=3%40dis%21USD%21171.62%2185.81%21%21%21%21%21%40210213c816881631084095782d076c%2112000034235390064%21sea%21US%210&curPageLogUid=Is0Zn12p8mJ1",
+            category: categories[2],
+            price: 86
+        },
+        {
+            name: "Pedal Exercise Mini Cycle Bike",
+            image: "https://ae01.alicdn.com/kf/S6784e10a47f24715a7746bf6d8ecfd617/Pedal-Exercise-Mini-Cycle-Bike-Great-for-Home-or-Office-Workout-Tone-and-Strengthen-Legs-or.jpg_220x220.jpg_.webp",
+            description: "Pedal Exercise Mini Cycle Bike Great for Home or Office Workout - Tone and Strengthen Legs or Arms - Digital Display for RPMs, C",
+            link: "https://www.aliexpress.us/item/3256805558965509.html?spm=a2g0o.productlist.main.29.1c5e4897IOKILD&algo_pvid=9a0badc5-7f7d-4445-9bc1-750fbbdcc590&aem_p4p_detail=20230630153348327838460841200005596757&algo_exp_id=9a0badc5-7f7d-4445-9bc1-750fbbdcc590-14&pdp_npi=3%40dis%21USD%2154.75%2146.53%21%21%21%21%21%40212250c216881644282755357d0745%2112000034193802096%21sea%21US%210&curPageLogUid=FMbqqud0aonw&search_p4p_id=20230630153348327838460841200005596757_31",
+            category: categories[2],
+            price: 47
+        },
+        {
+            name: "Nordic style modern simple desk",
+            image: "https://ae01.alicdn.com/kf/Saf140cadeaf9449ea90d5edf0331b20aG/Nordic-study-room-solid-wood-desk-modern-simple-small-apartment-desk-home-minimalist-study-long-table.jpg_220x220.jpg_.webp",
+            description: "Nordic study room, solid wood desk, modern simple small apartment desk, home minimalist study long table against the wall",
+            link: "https://www.aliexpress.us/item/3256805508570699.html?spm=a2g0o.productlist.main.1.1c5e4897IOKILD&algo_pvid=806e99eb-2fcb-415b-8d96-78519149f584&algo_exp_id=806e99eb-2fcb-415b-8d96-78519149f584-0&pdp_npi=3%40dis%21USD%21314.03%21226.1%21%21%21%21%21%4021021a7216881644746391311d0744%2112000034035734765%21sea%21US%210&curPageLogUid=vzN0byNEJVXx",
+            category: categories[2],
+            price: 227
+        },
+        {
+            name: "Modern office chair",
+            image: "https://ae01.alicdn.com/kf/S5ad2936f85e24cfc938861bcedf37b249/Office-Chairs-Modern-Lift-Swivel-Backrest-BedroomLeisure-Comfortable-Computer-Boss-Armchair-Ergonomic-Silla-Home-Furniture.jpg_220x220.jpg_.webp",
+            description: "Office Chairs Modern Lift Swivel Backrest BedroomLeisure Comfortable Computer Boss Armchair Ergonomic Silla Home Furniture",
+            link: "https://www.aliexpress.us/item/3256805390189856.html?spm=a2g0o.productlist.main.65.1c5e4897IOKILD&algo_pvid=5ec4b07e-0515-4544-87c2-d7b54cccc536&algo_exp_id=5ec4b07e-0515-4544-87c2-d7b54cccc536-32&pdp_npi=3%40dis%21USD%21583.98%21291.99%21%21%21%21%21%40211bcaae16881645184618759d086f%2112000033612932947%21sea%21US%210&curPageLogUid=rXLdTzluZrzi",
+            category: categories[2],
+            price: 292
+        },
+        {
+            name: "Sit Stand Desk Standing Desk",
+            image: "https://ae01.alicdn.com/kf/Se72a20526bbb4f45a061320d99ebd425b/Sit-Stand-Desk-Standing-Desk-Standing-Work-Station-Desk-Organizer-Desk-for-Home-Office-Laptop-Stand.jpg_220x220.jpg_.webp",
+            description: "Sit Stand Desk Standing Desk Standing Work Station Desk Organizer Desk for Home Office Laptop Stand GABRIEL",
+            link: "https://www.aliexpress.us/item/3256805566466004.html?spm=a2g0o.productlist.main.17.1c5e4897IOKILD&algo_pvid=94195707-1816-4738-b0f7-186aacacc373&algo_exp_id=94195707-1816-4738-b0f7-186aacacc373-8&pdp_npi=3%40dis%21USD%21164.15%2183.72%21%21%21%21%21%40210213c816881631084095782d076c%2112000034228709103%21sea%21US%210&curPageLogUid=leYwoG5YmbX1",
+            category: categories[2],
+            price: 84
         },
     ]);
 
