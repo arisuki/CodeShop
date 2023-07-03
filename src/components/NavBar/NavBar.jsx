@@ -17,15 +17,14 @@ export default function NavBar({ user, setUser }) {
             <img src={IanLogo} alt="logo" className='logo'></img>
             {/* {logo} */}
            </Link>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
+            &nbsp;&nbsp;
             <Link to="/orders">Order History</Link>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-            <Link to="/orders/new">New Order</Link>
+            &nbsp;&nbsp;|&nbsp;
             {user ? (
-                <div>
+                <>
                 &nbsp;&nbsp;<span>Welcome, {user.name}</span>
             &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
-            </div>
+            </>
             )
             :
             <div>Welcome, guest</div>

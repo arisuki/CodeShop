@@ -6,6 +6,7 @@ export default function CartDetail({ order, handleChangeQty, handleCheckout }) {
 console.log({order})
     const cartItems = order.cartItems.map(item => 
         <CartItem
+        className="cart-item"
         cartItem={item}
         isPaid={order.isPaid}
         handleChangeQty={handleChangeQty}
@@ -13,19 +14,17 @@ console.log({order})
         />
     )
 
-    console.log("cartItems in orderDetail", {cartItems})
-
     return (
         <div className="cart-detail">
-            {order.isPaid ? <span>Order #: {order.orderId}</span>  
-            : <span><h3>ITEMS IN CURRENT ORDER </h3></span>
+            {order.isPaid ? <span>Order #: {order._id}</span>  
+            : null
             }
                   
             <span>{cartItems}</span> 
             {order.isPaid ? null :
             <button onClick={handleCheckout}
                     >Check out</button> } 
-                   <span>Total</span> {order.orderTotal.toFixed(2)}
+                   <h5>Subtotal: ${order.orderTotal.toFixed(2)} </h5> 
         </div>
     )
 }

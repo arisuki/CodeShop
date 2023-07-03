@@ -1,7 +1,7 @@
 import sendRequest from './send-request';
 
-const BASE_URL = '/api/orders';
-// const BASE_URL = 'https://codeshop-api.onrender.com/api/orders';
+// const BASE_URL = '/api/orders';
+const BASE_URL = 'https://codeshop-api.onrender.com/api/orders';
 
 export function getCart() {
     return sendRequest(`${BASE_URL}/cart`);
