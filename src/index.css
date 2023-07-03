@@ -118,11 +118,13 @@ input:focus {
 }
 
 button, a.button {
-  margin: 1vmin;
-  padding: 1vmin;
+  min-width: 10vmin;
+  min-height: 10vmin;
+  margin: 10px;
+  padding: 10px;
   color: var(--white);
-  background-color: var(--orange);
-  font-size: 2vmin;
+  background-color: #775aa2;
+  font-size: 3vmin;
   font-weight: bold;
   text-decoration: none;
   text-align: center;

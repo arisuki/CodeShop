@@ -18,7 +18,7 @@ export default function OrderHistoryPage({ user }) {
 
     return (
         <>
-        <h1>Order List Component that lists all previous items</h1>
+        <h1>Previous Orders</h1>
          {paidOrders}
         {/* // orders={orders} */}
         </>

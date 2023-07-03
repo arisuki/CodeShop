@@ -11,9 +11,9 @@ return(
     <div className="shop-list-item-show">
         {item ? (
            <>
+           <h2>{item.name}</h2>
          <img src={item.image} alt="" />
-         <h2>{item.name}</h2>
-         {item.description}
+         <div>{item.description}</div>
          </>
         ) : (
             <div>loading...</div>
