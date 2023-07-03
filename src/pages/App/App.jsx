@@ -15,6 +15,7 @@ export default function App() {
   const [user, setUser] = useState(getUser());
   // console.log("this is user in App", user);
   const [shopItems, setShopItems] = useState([])
+  const [activeCategory, setActiveCategory] = useState(null);
   const categoriesRef = useRef([])
 
   useEffect(() =>{
@@ -22,16 +23,17 @@ export default function App() {
         const items = await itemsAPI.getAll();
         categoriesRef.current = [...new Set(items.map(item => item.category.name))];
         setShopItems(items);
+        setActiveCategory(null);
     }      getItems()
   }, [])
-
+  // categoriesRef.current[0]
   return (
     <main className="App">
       {user ? (
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route exact path="/" element={<Shop shopItems={shopItems} categories={categoriesRef.current} />} />
+            <Route exact path="/" element={<Shop shopItems={shopItems} categories={categoriesRef.current} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />} />
             <Route
               path="/shop/items/:id"
               element={<ShopListItemShow shopItems={shopItems} />}

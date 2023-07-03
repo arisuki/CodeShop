@@ -5,8 +5,9 @@ import * as ordersAPI from "../../utilities/orders-api";
 import CartDetail from "../../components/CartDetail/CartDetail";
 import { useNavigate } from 'react-router-dom';
 
-export default function Shop({ shopItems, categories}) {
+export default function Shop({ shopItems, categories, activeCategory, setActiveCategory}) {
     const [cart, setCart] = useState(null);
+    // const [activeCategory, setActiveCategory] = useState('');
     const navigate = useNavigate();
     const [activeCategory, setActiveCategory] = useState("");
 
@@ -14,8 +15,10 @@ export default function Shop({ shopItems, categories}) {
     async function gettingCart() {
         const cart = await ordersAPI.getCart();
         setCart(cart);
+
       }      gettingCart()
     }, [])
+
 
     async function handleAddToOrder(itemId) {
         const updatedCart = await ordersAPI.addItemToCart(itemId);
@@ -43,12 +46,18 @@ export default function Shop({ shopItems, categories}) {
       </h3>
       <div>
         {shopItems.length ? (
-          <ShopList shopItems={shopItems} 
+          activeCategory ? 
+          (<ShopList shopItems={shopItems.filter(item => item.category.name === activeCategory)} 
           handleAddToOrder={handleAddToOrder} 
           cart = {cart}
-          setCart={setCart}
-        
-          />
+          setCart={setCart}/>)
+          : 
+          (
+            <ShopList shopItems={shopItems} 
+            handleAddToOrder={handleAddToOrder} 
+            cart = {cart}
+            setCart={setCart}/>
+          )
         ) : (
           <div>loading...</div>
         )}
@@ -62,9 +71,20 @@ export default function Shop({ shopItems, categories}) {
       ) : (
         <div>Add items to cart</div>
       )}
-        
-      
 
+      <h4>Sign up for our newsletter to receive 15% off on your first purchase</h4>
+      <div>
+        <form autoComplete="off">
+            <label>Email</label>
+            <input
+              type="email"
+              name="email"
+            />
+            <button type="submit">
+              SIGN UP
+            </button>
+          </form>
+      </div>
     </>
   );
 }

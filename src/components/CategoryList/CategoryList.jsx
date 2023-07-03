@@ -1,4 +1,4 @@
-export default function CategoryList({categories}) {
+export default function CategoryList({categories, setActiveCategory}) {
 
 const allCategories = categories.map(category =>
     <div 
