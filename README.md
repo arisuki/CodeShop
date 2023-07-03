@@ -1,5 +1,5 @@
 # CodeShop  
-A coding shop is a full-stack MERN application. It is an Interner commerce app for all your coding needs. You can easily browse for items, add them to your shopping cart, add/delete them from the cart, purchase them, and ultimately enjoy them. Happy coding!
+The coding shop is a full-stack MERN application. It is an Interner commerce app for all your coding needs. You can easily browse for items, add them to your shopping cart, add/delete them from the cart, purchase them, and ultimately enjoy them. Happy coding!
 
 ## Screenshots
 - Login Page:
@@ -18,12 +18,13 @@ A coding shop is a full-stack MERN application. It is an Interner commerce app f
 ![My Image](pics/Previous%20orders.png)
 
 ### Technologies Used:
-  - MongoDB & Mongoose
+  - MongoDB Atlas
+  - Mongoose
   - Express
   - React
   - Node.js
   - CSS
-  - HTML
+  - Bootstrap
   - Render
 
 ## Getting started:
@@ -31,7 +32,6 @@ A coding shop is a full-stack MERN application. It is an Interner commerce app f
 - Link to the app: https://codeshop.onrender.com/
 
 ## Next steps:
-- AAU I want to see items organized by category;
 - AAU I want to sort items by least to most expensive and vice versa;
 - AAU I want to be able to add reviews to items that I have purchased;
 - AAU I want to integrate the Aliexpress API to populate my items;
