@@ -18,6 +18,7 @@ export default function App() {
   const [activeCategory, setActiveCategory] = useState(null);
   const categoriesRef = useRef([])
 
+  
   useEffect(() =>{
     async function getItems() {
         const items = await itemsAPI.getAll();
@@ -25,8 +26,6 @@ export default function App() {
         setShopItems(items);
         setActiveCategory(null);
     }      getItems()
-
-
   }, [])
   // categoriesRef.current[0]
   return (

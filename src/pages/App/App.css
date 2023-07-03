@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Ysabeau+Infant:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Yseau+Infant:wght@300&display=swap');
 
 .App {
   text-align: center;
@@ -27,7 +27,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #7ce0d6;
   font-family: 'Ysabeau Infant', sans-serif;
 }
 
@@ -41,9 +41,19 @@
 }
 
 body {
-  background: var(--black);
-  color: var(--white);
+  background-color: #38393a;
+  color:#dfdcd4;
   
+}
+
+a{
+  color: #7ce0d6;
+}
+
+.cart-button{
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 .logo {
@@ -64,42 +74,62 @@ body {
 }
 
 .cart-detail{
-  width: 30%;
-  border: purple 10px solid;
+  width: 100%;
+
 }
+
+/* .cart-item{
+} */
+
+.qty-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: auto;
+
+
+}
+
 .cart-img{
-  max-width: 60%;
+  max-width: 80%;
   max-height: auto;
   overflow: clip;
-  border: yellow 10px solid;
+  /* border: yellow 10px solid; */
 }
 
 .shop-list{
-  width: 90%;
   display: flex;
-  margin: auto;
-  flex-direction: row;
-  border: red 4px solid;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  width: 100%;
+  /* border: red 4px solid; */
+  background-color: #656f74;
+  border-radius: 10px;
 }
 
 .shop-list-item {
-  
   height: 25%;
   width: 25%;
-  margin: auto;
-  border: blue 10px solid;
+  padding: 5px;
+  /* border: blue 10px solid; */
 }
 
 .shop-list-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: green 10px solid;
+  padding: 10px;
+  border-radius: 7%;
+  /* border: green 10px solid; */
 
 }
 
+.shop-list-item-show{
+  padding: 20px;
+  padding-bottom: 40px;
+
+}
 .shop-list-item-show>img{
+  padding: 10px;
   width: 40%;
   height: auto;
 }
@@ -107,9 +137,17 @@ body {
 .categories{
   display: flex;
   flex-direction: row;
-  width: 40%;
-  justify-content: space-evenly;
+  width: 60%;
+  justify-content: space-around;
   color: rgb(255, 255, 255);
   margin: auto; 
   padding: 5px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+
+
+.categories div.active {
+  background-color: maroon;
 }

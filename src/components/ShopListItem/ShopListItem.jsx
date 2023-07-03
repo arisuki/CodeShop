@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function ShopListItem({ shopItem, handleAddToOrder}) {
     return (
+        
         <div className="shop-list-item">
       
             <Link to={`/shop/items/${shopItem._id}`}> 
