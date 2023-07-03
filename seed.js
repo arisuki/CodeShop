@@ -156,14 +156,6 @@ const Item = require('./models/item');
             price: 2
         },
         {
-            name: "Knitted beanie",
-            image: "https://ae01.alicdn.com/kf/Sc50af9c8ad1940f596b2df90b487ad3aR/Stretchy-Plain-Knitted-Hat-Women-Beanies-Solid-Skull-Cap-Winter-Keep-Warm-Dark-Green-Grey-Blue.jpg_220x220.jpg_.webp",
-            description: "Stretchy Plain Knitted Hat Women Beanies Solid Skull Cap Winter Keep Warm Dark Green Grey Blue Black",
-            link: "https://www.aliexpress.us/item/2255800085432663.html?spm=a2g0o.productlist.main.17.7c774a4aIyUNq2&algo_pvid=45e804f5-7649-4c1b-9b69-18702839707e&algo_exp_id=45e804f5-7649-4c1b-9b69-18702839707e-8&pdp_npi=3%40dis%21USD%214.63%210.99%21%21%21%21%21%40211bea0816881658794685311d07b9%2110000001106165525%21sea%21US%210&curPageLogUid=KYAg4b5ML8jc",
-            category: categories[1],
-            price: 2
-        },
-        {
             name: "New Knitted beanie",
             image: "https://ae01.alicdn.com/kf/H2ffa8307c2c04c36afeaa7cf399f46b2y/New-Women-Men-Knitted-Beanie-Hat-Cap-Autumn-Winter-Male-Lady-Casual-Embroidered-Boy-Girl-Cap.jpg_220x220.jpg_.webp",
             description: "New Women Men Knitted Beanie Hat Cap Autumn Winter Male Lady Casual Embroidered Boy Girl Cap Hat For Women Men",
@@ -252,12 +244,12 @@ const Item = require('./models/item');
             price: 292
         },
         {
-            name: "Sit Stand Desk Standing Desk",
-            image: "https://ae01.alicdn.com/kf/Se72a20526bbb4f45a061320d99ebd425b/Sit-Stand-Desk-Standing-Desk-Standing-Work-Station-Desk-Organizer-Desk-for-Home-Office-Laptop-Stand.jpg_220x220.jpg_.webp",
-            description: "Sit Stand Desk Standing Desk Standing Work Station Desk Organizer Desk for Home Office Laptop Stand GABRIEL",
-            link: "https://www.aliexpress.us/item/3256805566466004.html?spm=a2g0o.productlist.main.17.1c5e4897IOKILD&algo_pvid=94195707-1816-4738-b0f7-186aacacc373&algo_exp_id=94195707-1816-4738-b0f7-186aacacc373-8&pdp_npi=3%40dis%21USD%21164.15%2183.72%21%21%21%21%21%40210213c816881631084095782d076c%2112000034228709103%21sea%21US%210&curPageLogUid=leYwoG5YmbX1",
-            category: categories[2],
-            price: 84
+            name: "Knitted beanie",
+            image: "https://ae01.alicdn.com/kf/Sc50af9c8ad1940f596b2df90b487ad3aR/Stretchy-Plain-Knitted-Hat-Women-Beanies-Solid-Skull-Cap-Winter-Keep-Warm-Dark-Green-Grey-Blue.jpg_220x220.jpg_.webp",
+            description: "Stretchy Plain Knitted Hat Women Beanies Solid Skull Cap Winter Keep Warm Dark Green Grey Blue Black",
+            link: "https://www.aliexpress.us/item/2255800085432663.html?spm=a2g0o.productlist.main.17.7c774a4aIyUNq2&algo_pvid=45e804f5-7649-4c1b-9b69-18702839707e&algo_exp_id=45e804f5-7649-4c1b-9b69-18702839707e-8&pdp_npi=3%40dis%21USD%214.63%210.99%21%21%21%21%21%40211bea0816881658794685311d07b9%2110000001106165525%21sea%21US%210&curPageLogUid=KYAg4b5ML8jc",
+            category: categories[1],
+            price: 2
         },
     ]);
 

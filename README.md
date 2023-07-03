@@ -1,10 +1,33 @@
 # CodeShop  
-A coding shop for all your coding needs. 
+A coding shop is a full-stack MERN application. It is an Interner commerce app for all your coding needs. You can easily browse for items, add them to your shopping cart, add/delete them from the cart, purchase them, and ultimately enjoy them. Happy coding!
 
-### Section 3: Technologies Used 
+## Screenshots
+- Login Page:
+
+- SignUp Page:
+
+- Shop Page with item categories:
+
+- Order History Page:
+
+### Technologies Used:
   - MongoDB & Mongoose
   - Express
   - React
   - Node.js
+  - CSS
+  - HTML
+  - Render
 
-Clone this repo for a template for MERN-stack projects with token-based authentication
+## Getting started:
+- Link to Trello Board: https://trello.com/b/r52tympC/mern
+- Link to the app: 
+
+## Next steps:
+- AAU I want to see items organized by category;
+- AAU I want to sort items by least to most expensive and vice versa;
+- AAU I want to be able to add reviews to items that I have purchased;
+- AAU I want to integrate the Aliexpress API to populate my items;
+- AAU I want to use Stripe to have users pay for items;
+- AAU I want to be able to select colour options for items that have multiple colours;
+- AAU I want to search for items;
