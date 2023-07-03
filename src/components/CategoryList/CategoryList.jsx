@@ -1,8 +1,9 @@
 export default function CategoryList({categories}) {
 
-const activeCategories = categories.map(category =>
+const allCategories = categories.map(category =>
     <div 
     key = {category}
+    onClick={() => setActiveCategory(category)}
     >
         {category.toUpperCase()}
     </div>
@@ -10,7 +11,7 @@ const activeCategories = categories.map(category =>
 
     return (
         <div className="categories">
-            {activeCategories}
+            {allCategories}
 
         </div>
     )

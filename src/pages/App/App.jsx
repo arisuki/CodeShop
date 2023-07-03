@@ -23,8 +23,6 @@ export default function App() {
         categoriesRef.current = [...new Set(items.map(item => item.category.name))];
         setShopItems(items);
     }      getItems()
-
-
   }, [])
 
   return (

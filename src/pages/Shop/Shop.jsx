@@ -8,7 +8,8 @@ import { useNavigate } from 'react-router-dom';
 export default function Shop({ shopItems, categories}) {
     const [cart, setCart] = useState(null);
     const navigate = useNavigate();
-    
+    const [activeCategory, setActiveCategory] = useState("");
+
     useEffect(() =>{
     async function gettingCart() {
         const cart = await ordersAPI.getCart();
@@ -36,7 +37,9 @@ export default function Shop({ shopItems, categories}) {
   return (
     <>
       <h3>
-        <CategoryList categories={categories} />
+        <CategoryList categories={categories} 
+        activeCategory={activeCategory} 
+        setActiveCategory={ setActiveCategory} />
       </h3>
       <div>
         {shopItems.length ? (
