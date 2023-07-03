@@ -16,15 +16,19 @@ console.log({order})
 
     return (
         <div className="cart-detail">
-            {order.isPaid ? <span>Order #: {order._id}</span>  
-            : null
+            {order.isPaid ? 
+            <><h3>Order #: {order._id}</h3><h5>{new Date(order.updatedAt).toLocaleDateString()}</h5>
+            <span>{cartItems}</span> </>
+            : 
+            <>
+            <span>{cartItems}</span> 
+            <button onClick={handleCheckout}>Check out</button> 
+                   <h5>Subtotal: ${order.orderTotal.toFixed(2)} </h5>
+                   </> 
             }
                   
-            <span>{cartItems}</span> 
-            {order.isPaid ? null :
-            <button onClick={handleCheckout}
-                    >Check out</button> } 
-                   <h5>Subtotal: ${order.orderTotal.toFixed(2)} </h5> 
+            
+           
         </div>
     )
 }

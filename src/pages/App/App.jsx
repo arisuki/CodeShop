@@ -40,14 +40,29 @@ export default function App() {
               element={<ShopListItemShow shopItems={shopItems} />}
             />
             <Route path = "/orders" element={<OrderHistoryPage />}/> 
-            <Route 
-            path = "/shop" 
-            element={<Shop shopItems={shopItems} categories={categoriesRef.current}  />}/>
-
+            
           </Routes>
         </>
       ) : (
-        <AuthPage setUser={setUser} />
+        <>
+        <NavBar user={user} setUser={setUser} />
+        <Routes>
+        <Route exact path="/" element={<Shop shopItems={shopItems} categories={categoriesRef.current} activeCategory={activeCategory} user={user} setActiveCategory={setActiveCategory} />} />
+        <Route
+          path="/shop/items/:id"
+          element={<ShopListItemShow shopItems={shopItems} />}
+        />
+        <Route
+          path="/shop/items/:id"
+          element={<ShopListItemShow shopItems={shopItems} />}
+        />
+         <Route
+          path="/users"
+          element={<AuthPage setUser={setUser} />}
+        />
+      </Routes>
+  
+      </>
       )}
     </main>
   );
