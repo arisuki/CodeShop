@@ -14,7 +14,7 @@ export default function OrderHistoryPage({ user }) {
     }, []);
     const paidOrders = orders.map((order) =>
     
-    <CartDetail order={order}/> ) 
+    <><CartDetail order={order}/><hr/></>) 
 
     return (
         <>

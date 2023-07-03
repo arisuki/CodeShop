@@ -1,10 +1,10 @@
 import ShopListItem from "../ShopListItem/ShopListItem";
 
 
-export default function ShopList({ shopItems, handleAddToOrder }) {
+export default function ShopList({ shopItems, handleAddToOrder, user }) {
     const ShopListJsx = shopItems.map((item) =>
         <ShopListItem
-            shopItem={item} key={item._id} handleAddToOrder={handleAddToOrder}/>
+            shopItem={item} user={user} key={item._id} handleAddToOrder={handleAddToOrder}/>
     )
 
 

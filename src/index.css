@@ -21,7 +21,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--tan-4);
+  background-color: #38393a;
   padding: 2vmin;
   height: 100vh;
 }
@@ -80,8 +80,7 @@ code {
 
 .form-container {
   padding: 3vmin;
-  background-color: var(--tan-1);
-  border: .1vmin solid var(--tan-3);
+  background-color: #515156;
   border-radius: 1vmin;
 }
 
@@ -114,7 +113,7 @@ input {
 }
 
 input:focus {
-  border-color: var(--orange);
+  border-color: black;
 }
 
 button, a.button {
@@ -145,8 +144,10 @@ button.btn-xs {
 }
 
 button:disabled, form:invalid button[type="submit"] {
+  width: 30%;
+  margin: auto;
   cursor: not-allowed;
-  background-color: var(--tan-4);
+  background-color: #7ce0d6;
 }
 
 button[type="submit"] {
