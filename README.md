@@ -3,12 +3,19 @@ A coding shop is a full-stack MERN application. It is an Interner commerce app f
 
 ## Screenshots
 - Login Page:
+![My Image](pics/Login%20page.png)
 
 - SignUp Page:
+![My Image](pics/Signup%20page.png)
 
 - Shop Page with item categories:
+![My Image](pics/Store%20front.png)
+
+- Shopping Cart:
+![My Image](pics/Shopping%20cart.png)
 
 - Order History Page:
+![My Image](pics/Previous%20orders.png)
 
 ### Technologies Used:
   - MongoDB & Mongoose
@@ -21,7 +28,7 @@ A coding shop is a full-stack MERN application. It is an Interner commerce app f
 
 ## Getting started:
 - Link to Trello Board: https://trello.com/b/r52tympC/mern
-- Link to the app: 
+- Link to the app: https://codeshop.onrender.com/
 
 ## Next steps:
 - AAU I want to see items organized by category;

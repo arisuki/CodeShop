@@ -16,7 +16,7 @@ console.log({order})
 
     return (
         <div className="cart-detail">
-            {order.isPaid ? <span>Order #: {order._id}</span>  
+            {order.isPaid ? <span>Order #: {order._id}</span> 
             : null
             }
                   
