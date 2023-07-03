@@ -5,7 +5,7 @@ import * as ordersAPI from "../../utilities/orders-api";
 import CartDetail from "../../components/CartDetail/CartDetail";
 import { useNavigate } from 'react-router-dom';
 
-export default function Shop({ shopItems, categories, activeCategory, setActiveCategory}) {
+export default function Shop({ shopItems, categories, activeCategory, setActiveCategory, user}) {
     const [cart, setCart] = useState(null);
     const navigate = useNavigate();
 
@@ -52,6 +52,7 @@ export default function Shop({ shopItems, categories, activeCategory, setActiveC
           (<ShopList shopItems={shopItems.filter(item => item.category.name === activeCategory)} 
           handleAddToOrder={handleAddToOrder} 
           cart = {cart}
+          user = {user}
           setCart={setCart}/>)
           : 
           (

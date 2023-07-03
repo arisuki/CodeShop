@@ -50,6 +50,17 @@ a{
   color: #7ce0d6;
 }
 
+.auth-page-forms{
+  margin: auto;
+  width: 60%;
+}
+.auth-page-forms>button{
+  margin: auto;
+  width: 50%;
+}
+
+
+
 .cart-button{
   position: absolute;
   top: 0px;
@@ -85,13 +96,17 @@ a{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  vertical-align: auto;
+}
 
-
+.qty-buttons>span{
+  margin: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
 }
 
 .cart-img{
-  max-width: 80%;
+  width: 20%;
   max-height: auto;
   overflow: clip;
   /* border: yellow 10px solid; */
@@ -149,5 +164,5 @@ a{
 
 
 .categories div.active {
-  background-color: maroon;
+  background-color:  #9c7ba1;
 }

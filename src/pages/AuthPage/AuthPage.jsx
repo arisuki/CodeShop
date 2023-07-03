@@ -13,10 +13,23 @@ function handlePref(){
     }
 }
     return (
-    <div>
-<h1>Auth Page</h1>
-{userPref === 'signup' ? <SignUpForm setUser={setUser}/> : <LoginForm setUser={setUser}/>}
+
+<div className="auth-page-forms">
+<br />
 <button onClick={handlePref}>{userPref === 'signup' ? 'Already a member? Log in' : 'Need an account? Sign up'}</button>
-    </div>
-    )
+
+{userPref === 'signup' ? 
+<>
+<h1>Create an Account</h1>
+<SignUpForm setUser={setUser}/> 
+</>
+: 
+<>
+<h1>Log in to account</h1>
+<LoginForm setUser={setUser}/>
+</>
+}
+
+</div>
+)
 }
