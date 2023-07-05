@@ -1,19 +1,16 @@
 import "./App.css";
 import * as itemsAPI from "../../utilities/items-api"
-import * as ordersAPI from "../../utilities/orders-api";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState, useEffect, useRef } from 'react';
 import AuthPage from "../AuthPage/AuthPage";
 import NavBar from "../../components/NavBar/NavBar";
 import Shop from "../Shop/Shop";
 import ShopListItemShow from "../../components/ShopListItemShow/ShopListItemShow";
 import { getUser } from "../../utilities/users-service"
-// import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
-  // console.log("this is user in App", user);
   const [shopItems, setShopItems] = useState([])
   const [activeCategory, setActiveCategory] = useState(null);
   const categoriesRef = useRef([])
@@ -27,7 +24,6 @@ export default function App() {
         setActiveCategory(null);
     }      getItems()
   }, [])
-  // categoriesRef.current[0]
   return (
     <main className="App">
       {user ? (

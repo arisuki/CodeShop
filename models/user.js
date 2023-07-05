@@ -25,14 +25,14 @@ const userSchema = new Schema({
 }, {
     timestamps: true,
     toJSON: {
-        transform: function(doc, ret){
+        transform: function (doc, ret) {
             delete ret.password
             return ret
         }
     }
 })
 
-userSchema.pre('save', async function(next){
+userSchema.pre('save', async function (next) {
     // this is referring to the user document 
     if (!this.isModified('password')) return next()
     //update the password with a new computer hash

@@ -9,9 +9,9 @@ module.exports =
     checkToken
 }
 
-function checkToken(req, res){
-console.log('req.user', req.user)
-res.json(req.exp)
+function checkToken(req, res) {
+    console.log('req.user', req.user)
+    res.json(req.exp)
 }
 
 async function create(req, res) {
@@ -40,17 +40,17 @@ async function login(req, res) {
         //compare the password using decrypt
         //log them in if there's a match
         //throw an error if there's no match
-        const user = await User.findOne({email: req.body.email})
+        const user = await User.findOne({ email: req.body.email })
         if (!user) throw new Error()
 
         const match = await bcrypt.compare(req.body.password, user.password)
 
-        if (match){
-        const token = createJWT(user)
-        res.json(token)
-    } else {
-        throw new Error()
-    }
+        if (match) {
+            const token = createJWT(user)
+            res.json(token)
+        } else {
+            throw new Error()
+        }
 
 
 
