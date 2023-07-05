@@ -12,9 +12,11 @@ export default function ShopListItem({ shopItem, handleAddToOrder, user}) {
             { user ? (
                 <button onClick={()=> handleAddToOrder(shopItem._id)}>add to cart</button>
 
-            ):
-            <Link className= "shop-button-link"
-            to="/users">Log in to add to cart</Link>
+            ): (
+
+                <Link className= "shop-button-link"
+                to="/users">Log in to add to cart</Link>
+                )
 
             
 

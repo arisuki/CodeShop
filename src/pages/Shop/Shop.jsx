@@ -57,6 +57,7 @@ export default function Shop({ shopItems, categories, activeCategory, setActiveC
           : 
           (
             <ShopList shopItems={shopItems} 
+            user = {user}
             handleAddToOrder={handleAddToOrder} 
             cart = {cart}
             setCart={setCart}/>

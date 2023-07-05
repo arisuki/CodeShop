@@ -1,7 +1,7 @@
 import "./App.css";
 import * as itemsAPI from "../../utilities/items-api"
 import * as ordersAPI from "../../utilities/orders-api";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect, useRef } from 'react';
 import AuthPage from "../AuthPage/AuthPage";
 import NavBar from "../../components/NavBar/NavBar";
@@ -34,7 +34,7 @@ export default function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route exact path="/" element={<Shop shopItems={shopItems} categories={categoriesRef.current} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />} />
+            <Route path="/*" element={<Shop shopItems={shopItems} categories={categoriesRef.current} activeCategory={activeCategory} setActiveCategory={setActiveCategory} user={user} />} />
             <Route
               path="/shop/items/:id"
               element={<ShopListItemShow shopItems={shopItems} />}
@@ -47,7 +47,7 @@ export default function App() {
         <>
         <NavBar user={user} setUser={setUser} />
         <Routes>
-        <Route exact path="/" element={<Shop shopItems={shopItems} categories={categoriesRef.current} activeCategory={activeCategory} user={user} setActiveCategory={setActiveCategory} />} />
+        <Route path="/*" element={<Shop shopItems={shopItems} categories={categoriesRef.current} activeCategory={activeCategory} user={user} setActiveCategory={setActiveCategory} />} />
         <Route
           path="/shop/items/:id"
           element={<ShopListItemShow shopItems={shopItems} />}
