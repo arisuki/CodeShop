@@ -10,14 +10,14 @@ module.exports = {
 
 
 async function cart(req, res) {
-    const cart = await Order.getCart(req.user._id);
-    res.json(cart);
-  }
+  const cart = await Order.getCart(req.user._id);
+  res.json(cart);
+}
 
 async function addToCart(req, res) {
-    const cart = await Order.getCart(req.user._id);
-    await cart.addItemToCart(req.params.id);
-    res.json(cart);
+  const cart = await Order.getCart(req.user._id);
+  await cart.addItemToCart(req.params.id);
+  res.json(cart);
 }
 
 async function setItemQtyInCart(req, res) {
@@ -34,6 +34,6 @@ async function checkout(req, res) {
 }
 
 async function getAllOrders(req, res) {
-  const orders = await Order.find({user: req.user._id, isPaid: true}).sort({createdAt: -1})
+  const orders = await Order.find({ user: req.user._id, isPaid: true }).sort({ createdAt: -1 })
   res.json(orders);
 }
