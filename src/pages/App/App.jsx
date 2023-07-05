@@ -34,7 +34,7 @@ export default function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route path="/*" element={<Shop shopItems={shopItems} categories={categoriesRef.current} activeCategory={activeCategory} setActiveCategory={setActiveCategory} />} />
+            <Route path="/*" element={<Shop shopItems={shopItems} categories={categoriesRef.current} activeCategory={activeCategory} setActiveCategory={setActiveCategory} user={user} />} />
             <Route
               path="/shop/items/:id"
               element={<ShopListItemShow shopItems={shopItems} />}
@@ -47,7 +47,7 @@ export default function App() {
         <>
         <NavBar user={user} setUser={setUser} />
         <Routes>
-        <Route xact path="/*" element={<Shop shopItems={shopItems} categories={categoriesRef.current} activeCategory={activeCategory} user={user} setActiveCategory={setActiveCategory} />} />
+        <Route path="/*" element={<Shop shopItems={shopItems} categories={categoriesRef.current} activeCategory={activeCategory} user={user} setActiveCategory={setActiveCategory} />} />
         <Route
           path="/shop/items/:id"
           element={<ShopListItemShow shopItems={shopItems} />}

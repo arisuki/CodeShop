@@ -34,6 +34,6 @@ async function checkout(req, res) {
 }
 
 async function getAllOrders(req, res) {
-  const orders = await Order.find({user: req.user._id, isPaid: true})
+  const orders = await Order.find({user: req.user._id, isPaid: true}).sort({createdAt: -1})
   res.json(orders);
 }
